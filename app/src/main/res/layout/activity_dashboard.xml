@@ -46,6 +46,18 @@
             android:textSize="13sp" />
     </LinearLayout>
 
+    <ImageButton
+        android:id="@+id/btnLogout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Logout"
+        android:src="@android:drawable/ic_lock_power_off"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAvatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvAvatar"
+        app:tint="#1F2937" />
+
     <ImageView
         android:id="@+id/ivWalletLogo"
         android:layout_width="140dp"
@@ -111,55 +123,31 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <LinearLayout
-            android:id="@+id/llActions"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="40dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+        <Button
+            android:id="@+id/btnPemasukan"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="#6366F1"
+            android:text="Pemasukan"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:padding="0dp"
+            app:cornerRadius="8dp" />
 
-            <Button
-                android:id="@+id/btnPemasukan"
-                android:layout_width="0dp"
-                android:layout_height="56dp"
-                android:layout_weight="1"
-                android:layout_marginEnd="4dp"
-                android:backgroundTint="#6366F1"
-                android:text="Pemasukan"
-                android:textAllCaps="false"
-                android:textSize="12sp"
-                android:padding="0dp"
-                app:cornerRadius="8dp" />
-
-            <Button
-                android:id="@+id/btnPengeluaran"
-                android:layout_width="0dp"
-                android:layout_height="56dp"
-                android:layout_weight="1"
-                android:layout_marginEnd="4dp"
-                android:backgroundTint="#6366F1"
-                android:text="Pengeluaran"
-                android:textAllCaps="false"
-                android:textSize="12sp"
-                android:padding="0dp"
-                app:cornerRadius="8dp" />
-
-            <Button
-                android:id="@+id/btnRiwayat"
-                android:layout_width="0dp"
-                android:layout_height="56dp"
-                android:layout_weight="1"
-                android:backgroundTint="#6366F1"
-                android:text="Riwayat"
-                android:textAllCaps="false"
-                android:textSize="12sp"
-                android:padding="0dp"
-                app:cornerRadius="8dp" />
-
-        </LinearLayout>
+        <Button
+            android:id="@+id/btnPengeluaran"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="#6366F1"
+            android:text="Pengeluaran"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:padding="0dp"
+            app:cornerRadius="8dp" />
 
         <Button
             android:id="@+id/btnRiwayat"
@@ -169,7 +157,9 @@
             android:backgroundTint="#6366F1"
             android:text="Riwayat"
             android:textAllCaps="false"
-            app:cornerRadius="10dp" />
+            android:textSize="12sp"
+            android:padding="0dp"
+            app:cornerRadius="8dp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
